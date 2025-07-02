@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>CHRIS FULTON BRASIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra a biografia completa de Chris Fulton, sua carreira e filmografia (Bridgerton, The Witcher, Outlander). Conheça suas habilidades e veja fotos do talentoso ator escocês.">
+    <meta name="keywords" content="Chris Fulton, ator, Bridgerton, The Witcher, Outlander, biografia, filmografia, carreira, Sir Phillip Crane, Rience, Rob Cameron, Escócia, Royal Conservatoire of Scotland">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Estilos Globais e do Corpo */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('imagens/fundo.png');
+            background-size: cover;
+            background-position: center -50px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+            /* Camada semi-transparente sobre a imagem de fundo para melhorar a legibilidade do texto */
+            body::before {
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Ajustado para 50% de opacidade */
+                z-index: -1;
+            }
+
+        /* Estilos do Cabeçalho */
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+        /* Estilos da Navegação */
+        nav {
+            background-color: rgba(85, 85, 85, 0.9);
+            color: white;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+                nav ul li {
+                    margin: 0 15px;
+                }
+
+                    nav ul li a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: color 0.3s ease;
+                    }
+
+                        nav ul li a:hover {
+                            color: #ddd;
+                        }
+
+        /* Seção de Conteúdo Principal */
+        .conteudo {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /* Adicionado para criar o separador visual entre seções */
+        .conteudo section + section {
+            margin-top: 30px; /* Adiciona um espaço entre as seções */
+            padding-top: 30px; /* Adiciona um preenchimento na parte superior da seção */
+            border-top: 1px solid #ddd; /* Linha de separação */
+        }
+
+        /* Seção Sobre (About) */
+        .sobre-conteudo {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+            .sobre-conteudo img {
+                max-width: 300px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+        .sobre-texto {
+            flex: 1;
+        }
+
+        /* Estilos da Seção de Filmografia e Televisão */
+        .filmografia-lista {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+            .filmografia-lista h3 {
+                color: #555;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 5px;
+            }
+
+            .filmografia-lista ul {
+                list-style: disc;
+                margin-left: 20px;
+                padding: 0;
+            }
+
+                .filmografia-lista ul li {
+                    margin-bottom: 8px;
+                }
+
+        /* Estilos da Seção Carreira */
+        .carreira-conteudo p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        /* Estilos da Seção Habilidades */
+        .habilidade-lista ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .habilidade-lista ul li {
+                background-color: #e2e6ea;
+                color: #333;
+                padding: 8px 15px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                font-weight: bold;
+                border: 1px solid #d1d6db;
+                display: flex;
+                align-items: center;
+            }
+
+                .habilidade-lista ul li i {
+                    margin-right: 8px;
+                    color: #555;
+                }
+
+        /* Seção Galeria (Gallery) */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .galeria-lista {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .galeria-lista:hover {
+                transform: translateY(-5px);
+            }
+
+            .galeria-lista img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .galeria-lista p {
+                padding: 10px;
+                margin: 0;
+                font-size: 0.9em;
+                text-align: center;
+                background-color: #f9f9f9;
+            }
+
+        /* Estilos do Rodapé (Footer) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            margin-top: 30px;
+            border-top: 5px solid #555;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+            .links a {
+                color: white;
+                font-size: 1.5em;
+                margin: 0 10px;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+                .links a:hover {
+                    color: #ddd;
+                }
+
+        /* Design Responsivo (para telas menores) */
+        @media (max-width: 768px) {
+            .conteudo {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .sobre-conteudo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                .sobre-conteudo img {
+                    max-width: 80%;
+                }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+                nav ul li {
+                    margin: 5px 0;
+                }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOBRE O ATOR CHRIS FULTON</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#carreira">Carreira</a></li>
+            <li><a href="#filmografia">Filmografia</a></li>
+            <li><a href="#projetos">Próximos Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#galeria">Personagens</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <div class="sobre-conteudo">
+                <img src="imagens/perfil.png" alt="Retrato de Chris Fulton">
+                <div class="sobre-texto">
+                    <p>
+                        Christopher David Fulton (nascido em 27 de novembro de 1988) é um ator escocês.
+                    </p>
+                    <p>
+                        Fulton cresceu em Castle Douglas em Dumfries e Galloway. Seus pais, David e Pauline, administram o King's Arms Hotel. Chris estudou no Royal Conservatoire of Scotland em Glasgow, graduando-se em 2012 com o título de Bacharel em Artes em Atuação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="carreira">
+            <h2>Carreira</h2>
+            <div class="carreira-conteudo">
+                <p>
+                    Chris Fulton começou sua carreira com papéis como Ferg na adaptação de (2015) de 'Stonemouth' e Jay na minissérie de (2016) 'One of Us', ambas na BBC One. Ele então interpretou o banqueiro Charlie Lamont-Smith, o interesse amoroso de Phoebe (Ella-Rae Smith), na primeira temporada do thriller 'Clique' da BBC Three de (2017). No ano seguinte, Fulton fez sua estreia no cinema como Euan Bruce no épico medieval da Netflix 'Outlaw King', estrelado por Chris Pine como Robert the Bruce. Ele teve seu segundo papel no cinema como Danny na comédia dramática de (2019) Our Ladies.
+                </p>
+                <p>
+                    Em 2020, Fulton começou a interpretar Sir Philip Crane no drama de época da Netflix, Bridgerton, uma adaptação dos romances de época da Regência de Julia Quinn. No ano seguinte, Fulton apareceu na segunda temporada da série de fantasia da Netflix, 'The Witcher', como o vilão Rience. Em agosto de 2022, Chris saiu de The Witcher antes de sua terceira temporada, e o papel de Rience foi assumido por Sam Woolf. Mais tarde, em 2022, Fulton se juntou ao elenco da série Outlander da Starz para sua sétima temporada como Rob Cameron, que foi ao ar em 2023. Ele também teve um pequeno papel como Karl na série 'The Lazarus Project' da Sky.
+                </p>
+            </div>
+        </section>
+
+        <section id="filmografia">
+            <h2>Filmografia e Televisão</h2>
+            <div class="filmografia-lista">
+                <h3>Filmes</h3>
+                <ul>
+                    <li><strong>Falling Into Place</strong> (2023) - Ian</li>
+                    <li><strong>In It Together</strong> (2021) - Gabriel</li>
+                    <li><strong>Nossas Meninas</strong> (2019) - Danny</li>
+                    <li><strong>Legítimo Rei</strong> (2018) - Euan (Edward) Bruce</li>
+                </ul>
+
+                <h3>Séries de Televisão</h3>
+                <ul>
+                    <li><strong>Outlander</strong> (2023) - Rob Cameron</li>
+                    <li><strong>Ride Out</strong> (2023) - Phil Read</li>
+                    <li><strong>The Witcher</strong> (2021) - Rience</li>
+                    <li><strong>Clique</strong> (2017-2018) - Adam Banks</li>
+                    <li><strong>Bridgerton</strong> (2020) - Sir Phillip Crane</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Próximos Projetos</h2>
+            <div>
+                <p><strong>Fique ligado para atualizações!</strong></p>
+                <ul>
+                    <li><strong>Silo</strong> (2026) - Mike</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidade-lista">
+                <ul>
+                    <li><i class="fas fa-theater-masks"></i> Atuação Dramática</li>
+                    <li><i class="fas fa-laugh"></i> Atuação Cômica</li>
+                    <li><i class="fas fa-fist-raised"></i> Luta Cênica</li>
+                    <li><i class="fas fa-horse"></i> Equitação</li>
+                    <li><i class="fas fa-globe"></i> Sotaque Escocês (nativo)</li>
+                    <li><i class="fas fa-globe"></i> Sotaque Britânico (RP)</li>
+                    <li><i class="fas fa-globe"></i> Sotaque Americano Geral</li>
+                    <li><i class="fas fa-microphone"></i> Canto (Barítono)</li>
+                    <li><i class="fas fa-shoe-prints"></i> Dança (Básico)</li>
+                    <li><i class="fas fa-fist-raised"></i> Luta de espadas</li>
+                    <li><i class="fas fa-lightbulb"></i> Improvisação</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Personagens</h2>
+            <div class="galeria">
+                <div class="galeria-lista">
+                    <img src="imagens/rob.jpg" alt="Chris Fulton como Rob Cameron em Outlander">
+                    <p>Chris Fulton como Rob Cameron em Outlander (2023).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/2.jpg" alt="Chris Fulton como Ian em Falling Into Place">
+                    <p>Chris Fulton como Ian em Falling Into Place (2023).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/read.jpg" alt="Chris Fulton como Phill Read em Ride Out">
+                    <p>Chris Fulton como Phill Read em Ride Out (2023).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/phillip.jpg" alt="Chris Fulton como Sir Phillip Crane em Bridgerton">
+                    <p>Chris Fulton como Sir Phillip Crane em Bridgerton (2020).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/rience.jpeg" alt="Chris Fulton como Rience em The Witcher">
+                    <p>Chris Fulton como Rience em The Witcher (2021).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/euan.jpeg" alt="Chris Fulton como Euan Bruce em Outlaw King">
+                    <p>Chris Fulton como Euan Bruce em Outlaw King (2018).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/clique.jpeg" alt="Chris Fulton como Adam Banks em Clique">
+                    <p>Chris Fulton como Adam Banks em Clique (2017 - 2018).</p>
+                </div>
+                <div class="galeria-lista">
+                    <img src="imagens/inittogether.jpg" alt="Chris Fulton como Gabriel em In It Together">
+                    <p>Chris Fulton como Gabriel em In It Together (2021).</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025. Chris Fulton Brasil</p>
+        <div class="links">
+            <a href="https://www.instagram.com/chrissfulton/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Chris Fulton"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TM6zNLKMTzEyYPTiSc4oyixWSCvNKcnPAwB6pAkB&q=chris+fulton&oq=CH&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMgwIARAuGCcYgAQYigUyBggCEEUYOzIGCAMQRRg7MgcIBBAuGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMjY5NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener noreferrer" aria-label="Pesquisa Chris Fulton no Google"><i class="fab fa-google"></i></a>
+            <a href="https://www.imdb.com/pt/name/nm7255371/" target="_blank" rel="noopener noreferrer" aria-label="IMDb de Chris Fulton"><i class="fas fa-film"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
