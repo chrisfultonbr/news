@@ -1,0 +1,338 @@
+/* Estilos Globais e do Corpo */
+body {
+    
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('imagens/fundo.png');
+    background-size: cover;
+    background-position: center -50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+
+/* Camada semi-transparente sobre a imagem de fundo para melhorar a legibilidade do texto */
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustado para 50% de opacidade */
+    z-index: -1;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilos da Navegação */
+nav {
+    background-color: rgba(85, 85, 85, 0.9);
+    color: white;
+    padding: 0.5em 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+nav.scrolled {
+background-color: rgb(68, 68, 68, 0.95);
+padding: 0.3em 0;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Seção de Conteúdo Principal */
+.conteudo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Adicionado para criar o separador visual entre seções */
+.conteudo section + section {
+    margin-top: 30px; /* Adiciona um espaço entre as seções */
+    padding-top: 30px; /* Adiciona um preenchimento na parte superior da seção */
+    border-top: 1px solid #ddd; /* Linha de separação */
+}
+
+/* Seção Sobre (About) */
+.sobre-conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.sobre-conteudo img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.sobre-conteudo img.show {
+opacity: 1;
+transform: translate(0);
+
+}
+.sobre-texto {
+    flex: 1;
+}
+
+/* Estilos da Seção de Filmografia e Televisão */
+.filmografia-lista {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.filmografia-lista h3 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.filmografia-lista ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.filmografia-lista ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos da Seção Carreira */
+.carreira-conteudo p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* Estilos da Seção Habilidades */
+.habilidade-lista ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.habilidade-lista ul li {
+    background-color: #e2e6ea;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 1px solid #d1d6db;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+.habilidade-lista ul li.show-skill {
+    opacity: 1;
+    transform: translateY(0);
+}
+.habilidade-lista ul li i {
+    margin-right: 8px;
+    color: #555;
+}
+
+/* Seção Galeria (Gallery) */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.galeria-lista {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-lista:hover {
+    transform: translateY(-5px);
+}
+
+.galeria-lista img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-lista p {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para a nova seção de vídeos */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    background-color: #eaf1f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.video-item h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 4px;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilos do Rodapé (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 100);
+    color: white;
+    margin-top: 30px;
+    border-top: 5px solid #555;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+   
+}
+
+.links a:hover {
+    color: #ddd;
+    
+}
+
+
+/* Design Responsivo (para telas menores) */
+@media (max-width: 768px) {
+    .conteudo {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-conteudo img {
+        max-width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .videos-lista li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+       
+}
