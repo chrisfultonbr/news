@@ -1,6 +1,6 @@
 :root {
-    --cor-primaria: #007bff;
-    --cor-secundaria: #6c757d;
+    --cor-primaria: #0080ff;
+    --cor-secundaria: #03a7a7;
     --cor-fundo-principal: #212529;
     --cor-fundo-card: #2c3034;
     --cor-texto-claro: #f8f9fa;
@@ -656,7 +656,7 @@ footer {
         margin-right: 6px;
     }
     .galeria-lista img {
-        height: 150px;
+        height: 250px;
     }
     .galeria-lista p {
         font-size: 0.85em;

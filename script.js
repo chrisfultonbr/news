@@ -20,21 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', fadeInOnScroll);
     fadeInOnScroll();
 
-    const mainTitle = document.querySelector('header h1');
-    if (mainTitle) {
-        const originalText = mainTitle.textContent;
-        mainTitle.textContent = '';
-        let i = 0;
 
-        const typeWriter = () => {
-            if (i < originalText.length) {
-                mainTitle.textContent += originalText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 80);
-            }
-        };
-        typeWriter();
-    }
 
     const skillIcons = document.querySelectorAll('.habilidade-lista ul li i');
     skillIcons.forEach(icon => {
